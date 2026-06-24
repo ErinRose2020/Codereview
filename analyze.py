@@ -1,6 +1,10 @@
 def analyzecode(code):
+    issues = []
 
-    return len(code)
+    if len(code) > 500:
+        issues.append("File is very long")
+
+    return issues
 
 
 
